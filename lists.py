@@ -4,13 +4,13 @@ from math import trunc
 
 def remove_elements(list_to_remove_elements):
     if len(list_to_remove_elements) > 5:
-        del list_to_remove_elements[0]
-        del list_to_remove_elements[4]
         del list_to_remove_elements[5]
-    elif len(list_to_remove_elements) ==5:
-        del list_to_remove_elements[0]
         del list_to_remove_elements[4]
-    elif len(list_to_remove_elements) <5:
+        del list_to_remove_elements[0]
+    elif len(list_to_remove_elements) == 5:
+        del list_to_remove_elements[4]
+        del list_to_remove_elements[0]
+    elif 0 < len(list_to_remove_elements) <5:
         del list_to_remove_elements[0]
     else:
         list_to_remove_elements = []
@@ -18,8 +18,8 @@ def remove_elements(list_to_remove_elements):
 
 
 def add_elements(list_to_add_elements):
-    list_to_add_elements.insert(0, "pink")
-    list_to_add_elements.apend("yellow")
+    list_to_add_elements.insert(0, "Pink")
+    list_to_add_elements.append("Yellow")
     return list_to_add_elements # Remove this line and implement
 
 
